@@ -1,2 +1,2 @@
-# Technical_Documentation
-This is a CSS Technical Documentation I created following FCC JS Version
+# CSS_Technical_Documentation
+CSS Technical Documentation following FCC Version

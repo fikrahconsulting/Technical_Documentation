@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav id="navbar">
+        <header>CSS Documentation</header>
+        <ul>
+            <a class="nav-link" href="#Introduction">
+                <li>Introduction</li>
+            </a>
+            <a class="nav-link" href="#What_is_CSS?">
+                <li>What is CSS?</li>
+            </a>
+            <a class="nav-link" href="#CSS_Syntax">
+                <li>CSS Syntax</li>
+            </a>
+            <a class="nav-link" href="#CSS_Selectors">
+                <li>CSS Selectors</li>
+            </a>
+            <a class="nav-link" href="#CSS_How_To_Add_Css">
+                <li>CSS How To Add Css</li>
+            </a>
+            <a class="nav-link" href="#CSS_Comments">
+                <li>CSS Comments</li>
+            </a>
+            <a class="nav-link" href="#CSS_Margins">
+                <li>CSS Margins</li>
+            </a>
+            <a class="nav-link" href="#Reference">
+                <li>Reference</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>
+                    CSS is the language we use to style a Web page.
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="What_is_CSS?">
+            <header>
+                What is CSS?
+            </header>
+            <article>
+                <p>
+                    <ul>
+                        <li> CSS stands for Cascading Style Sheets</li>
+                        <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</li>
+                        <li>                    CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                        </li>
+                        <li>                    External stylesheets are stored in CSS files
+                        </li>            
+                    </ul> 
+                </p>
+            </article>
+        </section>
+        <section class="main-section" id="CSS_Syntax">
+            <header>
+                CSS Syntax
+            </header>
+            <article>
+                <p>
+                    A CSS rule consists of a selector and a declaration block.
+                </p>
+                <img src="https://www.w3schools.com/css/img_selector.gif" alt="css selector">
+                <p>The selector points to the HTML element you want to style.</p>
+
+               <p>The declaration block contains one or more declarations separated by semicolons.</p> 
+
+               <p>Each declaration includes a CSS property name and a value, separated by a colon.</p> 
+
+               <p>Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.</p> 
+                </p>
+
+                <div>
+                    <h3>Example</h3>
+                    <p>In this example all <p> elements will be center-aligned, with a red text color:
+                    </p>
+                    <div>
+                        <code>
+                            p {
+                                color: red;
+                                text-align: center;
+                            }
+                        </code>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>Example Explained</h3>
+                    <ul>
+                        <li>p is a selector in CSS (it points to the HTML element you want to style: <p>).</li>
+                            <li>color is a property, and red is the property value</li>
+                            <li>text-align is a property, and center is the property value</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <section class="main-section" id="CSS_Selectors">
+        <header>
+            CSS Selectors
+        </header>
+        <article>
+            <p>
+                A CSS selector selects the HTML element(s) you want to style.
+            </p>
+
+            <p>
+                CSS selectors are used to "find" (or select) the HTML elements you want to style.
+            </p>
+
+            <p>
+                We can divide CSS selectors into five categories:
+            </p>
+
+            <ul>
+                <li>Simple selectors (select elements based on name, id, class)</li>
+                <li>Combinator selectors (select elements based on a specific relationship between them)
+                    </li>
+                    <li>Pseudo-class selectors (select elements based on a certain state)
+                        </li>
+                        <li>Pseudo-elements selectors (select and style a part of an element)
+                           </li>
+                           <li> Attribute selectors (select elements based on an attribute or attribute value)
+                            </li>
+                            <li>This page will explain the most basic CSS selectors.</li>
+            </ul>
+
+            <p>
+                This page will explain the most basic CSS selectors.
+            </p>
+
+            <div>
+                <h2>The CSS element Selector</h2>
+                <p>
+                    The element selector selects HTML elements based on the element name.
+                </p>
+                <div>
+                    <h3>Example</h3>
+Here, all <p> elements on the page will be center-aligned, with a red text color: 
+    <div>
+       <code>
+        p {
+            text-align: center;
+            color: red;
+          }
+       </code>
+    </div>
+                </div>
+            </div>
+            <div>
+                <h2>The CSS class Selector</h2>
+                <p>The class selector selects HTML elements with a specific class attribute.
+                </p>
+                <p>To select elements with a specific class, write a period (.) character, followed by the class name.</p>
+                <div>
+                    <h3>Example</h3>
+<p> In this example all HTML elements with class="center" will be red and center-aligned: </p>
+    <div>
+       <code>
+        .center {
+            text-align: center;
+            color: red;
+          }
+       </code>
+       <p>You can also specify that only specific HTML elements should be affected by a class.</p>
+
+       <div>
+        <h3>Example
+        </h3>
+        <p>In this example only <p> elements with class="center" will be red and center-aligned:         </p>
+        <div>
+            <code>
+                p.center {
+                    text-align: center;
+                    color: red;
+                  }
+            </code>
+            <p>HTML elements can also refer to more than one class.
+
+            </p>
+        </div>
+        <div>
+            <h3>Example
+            </h3>
+            <p>In this example the <p> element will be styled according to class="center" and to class="large": 
+
+            </p>
+            <div>
+                <code>
+                    <p class="center large">This paragraph refers to two classes.</p>
+                </code>
+            </div>
+        </div>
+       </div>
+    </div>
+                
+            </div>
+        </article>
+        </section>
+        <section class="main-section" id="CSS_How_To_Add_Css">
+            <header>CSS How To Add Css</header>
+            <article>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. 
+            </article>
+            <div>
+                <h2>Three Ways to Insert CSS</h2>
+                <p>There are three ways of inserting a style sheet:</p>
+                <ul>
+                    <li>External CSS</li>
+                    <li> Internal CSS</li>
+                    <li>Inline CSS</li>
+                </ul>
+                <hr>
+                <h2>External CSS</h2>
+                <p>With an external style sheet, you can change the look of an entire website by changing just one file!</p>
+                Each HTML page must include a reference to the external style sheet file inside the <code><link></code> element, inside the head section.
+                <div>
+                    <h3>Example</h3>
+                    <p>External styles are defined within the <link> element, inside the <head> section of an HTML page:</p>
+                        <div>
+                            <code>
+                                <!DOCTYPE html>
+                                <html>
+                                <head>
+                                <link rel="stylesheet" href="mystyle.css">
+                                </head>
+                                <body>
+
+                                <h1>This is a heading</h1>
+                                <p>This is a paragraph.</p>
+
+                                </body>
+                                </html>
+                            </code>
+                        </div>
+                        <p>An external style sheet can be written in any text editor, and must be saved with a .css extension.</p>
+                        <p>The external .css file should not contain any HTML tags.</p>
+                        <p>Here is how the "mystyle.css" file looks:</p>
+                        <div>
+                            <h2>"mystyle.css"</h2>
+                            <div>
+                                <code>
+                                    body {
+                                        background-color: lightblue;
+                                      }
+                                      
+                                      h1 {
+                                        color: navy;
+                                        margin-left: 20px;
+                                      }
+                                </code>
+                            </div>
+                            <hr>
+                            <div>
+                                <h2>Inline CSS</h2>
+                                <p>An inline style may be used to apply a unique style for a single element.</p>
+                                <p>To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+                                </p>
+                                <div>
+                                    <h3>Example</h3>
+                                    <p>Inline styles are defined within the "style" attribute of the relevant element:
+
+                                    </p>
+                                    <div>
+                                        <code>
+                                            <!DOCTYPE html>
+                                            <html>
+                                            <body>
+                                            <h1 style="color:blue;text-align:center;">This is a heading</h1>
+                                            <p style="color:red;">This is a paragraph.</p>
+                                            </body>
+                                            </html>
+                                        </code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="CSS_Comments">
+            <header>CSS Comments</header>
+            <article>CSS comments are not displayed in the browser, but they can help document your source code. 
+            </article>
+            <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+            <p>Comments are ignored by browsers.</p>
+            <!-- <p> A CSS comment is placed inside the <style> element, and starts with /* and ends with */:</p> -->
+            <div>
+                <h3>Example</h3>
+                <div>
+                    <code>
+                        /* This is a single-line comment */
+                        p {
+                        color: red;
+                        }
+                    </code>
+                </div>
+                <p>You can add comments wherever you want in the code:</p>
+                <h3>Example</h3>
+                <div>
+                    <code>
+                        p {
+                            color: red;  /* Set text color to red */
+                          }
+                    </code>
+                </div>
+                <p>Comments can also span multiple lines: </p>
+                <div>
+                    <h3>Example</h3>
+                    <div>
+                        <code>
+                            /* This is
+                            a multi-line
+                            comment */
+
+                            p {
+                            color: red;
+                            }
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>All the documentation in this page is taken from <a href="https://www.w3schools.com/css/default.asp" target="_blank">W3schools</a></article>
+        </section>
+        <section class="main-section" id="CSS_Margins">
+            <header> CSS Margins</header>
+            <article>Margins are used to create space around elements, outside of any defined borders.</article>
+            <p>The CSS margin properties are used to create space around elements, outside of any defined borders.</p>
+            <p>With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).</p>
+            <hr>
+            <div>
+                <h2>Margin - Individual Sides</h2>
+                <p>CSS has properties for specifying the margin for each side of an element:</p>
+                <ul>
+                    <li>margin-top</li>
+                    <li> margin-right</li>
+                    <li>margin-bottom</li>
+                    <li>margin-left</li>
+                </ul>
+                <p>All the margin properties can have the following values:                </p>
+                <ul>
+                    <li>auto - the browser calculates the margin
+                        <li>                        length - specifies a margin in px, pt, cm, etc.
+                        </li>
+                        <li>                        % - specifies a margin in % of the width of the containing element
+                        </li>
+                        <li>                        inherit - specifies that the margin should be inherited from the parent element</li>
+                    </li>
+                </ul>
+                <div>
+                    <h3>Example</h3>
+                    <!-- <p>Set different margins for all four sides of a <p> element:</p> -->
+                    <div>
+                        <code>
+                            p {
+                                margin-top: 100px;
+                                margin-bottom: 100px;
+                                margin-right: 150px;
+                                margin-left: 80px;
+                              }
+                        </code>
+                    </div>
+                    <hr>
+                    <h2>Margin - Shorthand Property</h2>
+                    <p>To shorten the code, it is possible to specify all the margin properties in one property.</p>
+                    <p>The margin property is a shorthand property for the following individual margin properties:</p>
+                    <ul>
+                        <li>margin-top</li>
+                        <li> margin-right</li>
+                        <li>margin-bottom</li>
+                        <li>margin-left</li>
+                    </ul>
+                    <p>So, here is how it works:</p>
+                    <p>If the margin property has four values:</p>
+                    <ul>
+                        <li>margin: 25px 50px 75px 100px;
+                            <ul>
+                                <li>top margin is 25px
+                                    </li>
+                                    <li>right margin is 50px
+                                       </li>
+                                       <li> bottom margin is 75px
+                                        </li>
+                                        <li>left margin is 100px</li>
+                            </ul>
+                            </li>
+                    </ul>
+                    <div>
+                        <h3>Example</h3>
+                        <p>Use the margin shorthand property with four values:</p>
+                        <div>
+                            <code>
+                                p {
+                                    margin: 25px 50px 75px 100px;
+                                  }
+                            </code>
+                        </div>
+                    </div>
+                    <div>
+                        <p>If the margin property has two values:</p>
+                        <ul>
+                            <li>margin: 25px 50px;
+                                <ul>
+                                    <li>top and bottom margins are 25px
+                                        </li>
+                                        <li>right and left margins are 50px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            <h3>Example</h3>
+                            <p>Use the margin shorthand property with two values: </p>
+                            <div>
+                                <code>
+                                    p {
+                                        margin: 25px 50px;
+                                      }
+                                </code>
+                            </div>  
+                        </div>
+                    </div>
+                    <div>
+                        <p>If the margin property has one value:</p>
+                        <ul>
+                            <li>margin: 25px;
+                                <ul>
+                                    <li>all four margins are 25px</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div>
+                            <h3>Example</h3>
+                            <p>Use the margin shorthand property with one value: </p>
+                            <div>
+                                <code>
+                                    p {
+                                        margin: 25px;
+                                      }
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
